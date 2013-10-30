@@ -1,0 +1,22 @@
+{
+  "name": "hbb-jsbt",
+  "version": "0.0.0",
+  "description": "a simple behavior tree with precondition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hbbalfred/hbb-jsbt.git"
+  },
+  "keywords": [
+    "bt",
+    "ai",
+    "game"
+  ],
+  "author": "hbbalfred",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "b8b7909e5a3cc82b3878130b828a5d1650321581"
+}
