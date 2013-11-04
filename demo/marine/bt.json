@@ -1,0 +1,41 @@
+{
+	"type" : "pr",
+	"name" : "marine",
+	"node" : [{
+		"type" : "sq",
+		"name" : "dash",
+		"node" : [{
+			"name" : "move to sound position",
+			"node" : "A_MoveTo"
+		},{
+			"name" : "look around",
+			"node" : "A_LookAround"
+		},{
+			"name" : "report clear",
+			"node" : "A_Clear"
+		}],
+		"cond" : {
+			"node" : "C_HasSound"
+		}
+	},{
+		"type" : "pa",
+		"name" : "patrol",
+		"node" : [{
+			"name" : "wander",
+			"node" : "A_Wander"
+		},{
+			"type" : "pr",
+			"name" : "smoke",
+			"node" : [{
+				"name" : "coughing",
+				"node" : "A_Cough",
+				"cond" : {
+					"node" : "C_IsChoke"
+				}
+			},{
+				"name" : "smoking",
+				"node" : "A_Smoke"
+			}]
+		}]
+	}]
+}
