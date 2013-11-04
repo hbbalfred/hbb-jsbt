@@ -1,0 +1,49 @@
+{
+	"type" : "if",
+	"name" : "if",
+	"node" : [{
+		"type" : "lo",
+		"name" : "lo",
+		"node" : [{
+			"type" : "pa",
+			"name" : "pa",
+			"node" : [{
+				"type" : "pr",
+				"name" : "pr",
+				"node" : [{
+					"type" : "sl",
+					"name" : "sl",
+					"node" : [{
+						"type" : "sq",
+						"name" : "sq",
+						"node" : [{
+							"node" : "MyAction",
+							"name" : "my",
+							"cond" : {
+								"type" : "not",
+								"cond" : {
+									"type" : "xor",
+									"cond" : [{
+										"type" : "and",
+										"cond" : [{
+											"type" : "false"
+										},{
+											"type" : "true"
+										}]
+									},{
+										"type" : "or",
+										"cond" : [{
+											"cond" : "MyCond"
+										},{
+											"cond" : "MyCond"
+										}]
+									}]
+								}
+							}
+						}]
+					}]
+				}]
+			}]
+		}]
+	}]
+}

@@ -63,7 +63,7 @@ describe('Loop Test', function () {
 
 		var bb = {fn : 0, sn : 0, finish: 0, wait : 0};
 
-		var root = new Loop().setLoopCount(2)
+		var root = new Loop({loopCount:2})
 		.addChild( new Finish().setPrecondition( new Succ() ) )
 		.addChild( new Wait() );
 

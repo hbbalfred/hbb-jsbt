@@ -87,7 +87,7 @@ describe('Parallel Test', function () {
 
 		var bb = {fn : 0, sn : 0, finish: 0, wait : 0};
 
-		var root = new Parallel()
+		var root = new Parallel({finishCondition : Parallel.CON_OR})
 		.addChild( new Finish() )
 		.addChild( new Wait().setPrecondition(new Fail()) )
 		.addChild( new Finish() );
