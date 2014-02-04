@@ -1,4 +1,4 @@
-hbb-jsbt
+hbb-jsbt [![Build Status](https://travis-ci.org/hbbalfred/hbb-jsbt.png?branch=master)](https://travis-ci.org/hbbalfred/hbb-jsbt)
 ========
 
 用JavaScript实现的一个简单行为树库，主要参考[C++版的行为树库](https://code.google.com/p/tsiu)
