@@ -4,7 +4,11 @@
   "description": "a simple behavior tree with precondition",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha test/* --require blanket --reporter travis-cov"
+  },
+  "config": {
+    "blanket" : { "pattern" : "hbb-jsbt/lib" },
+    "travis-cov": { "threshold": 85 }
   },
   "repository": {
     "type": "git",
@@ -19,7 +23,9 @@
   }, 
   "devDependencies": {
     "mocha": ">=0.0.1", 
-    "should": ">=0.0.1"
+    "should": ">=0.0.1",
+    "blanket": "*",
+    "travis-cov": "*"
   },
   "author": "hbbalfred",
   "license": "BSD",
