@@ -20,3 +20,5 @@ exp.Not   = require("./lib/cond/not");
 exp.Or    = require("./lib/cond/or");
 exp.True  = require("./lib/cond/true");
 exp.Xor   = require("./lib/cond/xor");
+
+exp.JsonGen = require("./lib/auto/json");
